@@ -15,8 +15,16 @@ namespace SWC.REST.Controllers
 {
     public class ServiceController : ApiController
     {
-        IScheduleRepository _scheduleService = new ScheduleService();
-        IUserRepository _userService = new UserService();
+        private IScheduleRepository _scheduleService;
+        private IUserRepository _userService;
+
+
+        public ServiceController(IScheduleRepository scheduleService, IUserRepository userService)
+        {
+            _scheduleService = scheduleService;
+            _userService = userService;
+        }
+
 
         #region USER
 
@@ -98,13 +106,12 @@ namespace SWC.REST.Controllers
         [Route("api/service/UpdateScheduleStaff/{userid}/{scheduleitemid}/{description}")]
         public JsonResponse UpdateScheduleStaff(int userid, int scheduleitemid, string description)
         {
-            ScheduleService _scheduleservice = new ScheduleService();
             JsonResponse data = new JsonResponse();
             data.STATUS = false;
             try
             {
 
-                var result = _scheduleservice.UpdateScheduleStaff(userid, scheduleitemid, description);
+                var result = _scheduleService.UpdateScheduleStaff(userid, scheduleitemid, description);
 
                 if (result)
                 {
@@ -232,19 +239,18 @@ namespace SWC.REST.Controllers
         }
 
 
- 
+
 
         [HttpPut]
         [Route("api/service/SaveScheduleItem/{JsonScheduleItem}")]
         public JsonResponse SaveScheduleItem(JsonScheduleItem entity)
         {
-            ScheduleService _scheduleservice = new ScheduleService();
             JsonResponse data = new JsonResponse();
             data.STATUS = false;
             try
             {
                 //var allday = 1;
-                var result = _scheduleservice.SaveScheduleItem(entity.ID, entity.CUSTOMERID, entity.PERIODTYPEID, entity.TIME, entity.DATE);
+                var result = _scheduleService.SaveScheduleItem(entity.ID, entity.CUSTOMERID, entity.PERIODTYPEID, entity.TIME, entity.DATE);
 
                 if (result)
                 {
@@ -264,7 +270,7 @@ namespace SWC.REST.Controllers
         }
         #endregion SCHEDULE
 
- 
+
         protected override void Dispose(bool disposing)
         {
             base.Dispose(disposing);

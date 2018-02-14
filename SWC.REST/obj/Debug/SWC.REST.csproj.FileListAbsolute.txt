@@ -50,3 +50,10 @@ C:\Projetos\SWCNEW\Source\SWC\SWC.REST\obj\Debug\SWC.REST.csprojResolveAssemblyR
 C:\Projetos\SWCNEW\Source\SWC\SWC.REST\obj\Debug\SWC.REST.dll
 C:\Projetos\SWCNEW\Source\SWC\SWC.REST\obj\Debug\SWC.REST.pdb
 C:\Projetos\SWCNEW\Source\SWC\SWC.REST\bin\SWC.Data.dll.config
+C:\Projetos\SWCNEW\Source\SWC\SWC.REST\bin\Ninject.dll
+C:\Projetos\SWCNEW\Source\SWC\SWC.REST\bin\Ninject.Web.Common.dll
+C:\Projetos\SWCNEW\Source\SWC\SWC.REST\bin\Ninject.Web.Mvc.dll
+C:\Projetos\SWCNEW\Source\SWC\SWC.REST\bin\WebActivatorEx.dll
+C:\Projetos\SWCNEW\Source\SWC\SWC.REST\bin\Ninject.xml
+C:\Projetos\SWCNEW\Source\SWC\SWC.REST\bin\Ninject.Web.Common.xml
+C:\Projetos\SWCNEW\Source\SWC\SWC.REST\bin\Ninject.Web.Mvc.xml

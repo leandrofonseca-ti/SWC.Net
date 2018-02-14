@@ -70,5 +70,16 @@ namespace SWC.Data.Interface
         /// </summary>
         /// <returns></returns>
         List<clsPlan> LoadPlan();
+
+        /// <summary>
+        /// Save Item
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="userid"></param>
+        /// <param name="periodtypeid"></param>
+        /// <param name="time"></param>
+        /// <param name="date"></param>
+        /// <returns></returns>
+        bool SaveScheduleItem(int id, int userid, int periodtypeid, string time, string date);
     }
 }
