@@ -1,0 +1,8 @@
+C:\Projetos\SWCNEW\Source\SWC\SWC.Data\obj\Debug\SWC.Data.csproj.CoreCompileInputs.cache
+C:\Projetos\SWCNEW\Source\SWC\SWC.Data\bin\Debug\SWC.Data.dll
+C:\Projetos\SWCNEW\Source\SWC\SWC.Data\bin\Debug\SWC.Data.pdb
+C:\Projetos\SWCNEW\Source\SWC\SWC.Data\bin\Debug\MySql.Data.dll
+C:\Projetos\SWCNEW\Source\SWC\SWC.Data\obj\Debug\SWC.Data.dll
+C:\Projetos\SWCNEW\Source\SWC\SWC.Data\obj\Debug\SWC.Data.pdb
+C:\Projetos\SWCNEW\Source\SWC\SWC.Data\obj\Debug\SWC.Data.csprojResolveAssemblyReference.cache
+C:\Projetos\SWCNEW\Source\SWC\SWC.Data\bin\Debug\SWC.Data.dll.config
